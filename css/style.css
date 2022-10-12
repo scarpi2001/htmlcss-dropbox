@@ -10,12 +10,20 @@ body {
     font-size: 16px;
 }
 
-/* HEADER */
-header {
-    /* DEBUG */
-    background-color: aqua;
-    border: 1px solid black;
+.list {
+    list-style-type: none;
 }
+
+.grey {
+    color: grey;
+}
+
+.blue {
+    color: blue;
+}
+
+/* HEADER */
+
     /* nav header */
     nav {
         display: flex;
@@ -35,11 +43,11 @@ header {
             width: 30%;
         }
 
-            .menu_list {
+            .menu {
                 width: 100%;
             }
 
-                nav ul {
+                .top {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -49,18 +57,29 @@ header {
                     /* links e bottoni */
                     .link {
                         text-decoration: none;
-                        color: black;
                     }
 
-                    .white {
-                        color: #fff;
-                    }
+                        .white {
+                            color: #fff;
+                        }
 
+                        .black {
+                            color: black;
+                        }
+                 
                     .btn {
-                        background-color: rgb(0, 68, 255);
                         padding: 10px 20px;
+                        text-align: center;
                     }
-    
+
+                        .azure {
+                            background-color: rgb(0, 68, 255);
+                        }
+                        
+                        .empty {
+                            border: 1px solid black;
+                        }
+
     /* sezione header */
     .header_section {
         margin-top: 80px;
@@ -101,15 +120,139 @@ header {
                     }
 
 /* MAIN */
+
+/* sezione 1 */
 .main_section {
     width: 60%;
-    margin: auto;
+    margin: 100px auto;
     /* DEBUG */
-    height: 1200px;
     background-color: blueviolet;
-    border: 1px solid black;
 }
 
+    .main_section h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .fatturazione {
+        margin-bottom: 30px;
+    }
+
+        .fatturazione span {
+            margin-right: 15px;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+
+    /* blocco sezione 1 */
+    .main_section_block {
+        display: flex;
+        justify-content: space-between;
+
+    } 
+        /* elemento blocco */
+        .block_col {
+            width: 30%;  
+        }
+
+            .border {
+                border: 1px solid rgb(223, 220, 220);
+            }
+            /* intestazione del blocco */
+            .block_header {
+                text-align: center;
+                padding: 10px 0;
+                border-bottom: 1px solid rgb(223, 220, 220);
+            }
+            /* corpo del blocco */
+            .block_main {
+                padding: 30px 20px;
+            }
+
+                .packet {
+                    margin-bottom: 50px;
+                }
+
+                    .price {
+                        margin: 10px 0;
+                    }
+
+                    /* content */
+                    .list.mid :nth-child(2), .list.mid :nth-child(4) {
+                        margin: 20px 0;
+                    }
+
+                    .content :nth-child(2) {
+                        margin: 40px 0;
+                    }
+
+                    .divisore {
+                        width: 20%;
+                        margin: 40px 0;
+                        color: rgb(223, 220, 220);
+                    }
+
+                    .content h4 {
+                        margin-bottom: 20px;
+                    }
+
+    /* sottoblocco sezione 1 */
+    .main_section_underblock {
+        margin-top: 50px;
+    }
+        .due {
+            display: flex;
+            justify-content: space-between;
+        }  
+        
+            .block_main--text {
+                width: 65%;
+            }
+
+                .block_main--text h3 {
+                    margin-bottom: 20px;
+                }
+
+                .block_main--text h4 {
+                    margin-bottom: 40px;
+                }
+
+            .block_main--btn {
+                width: 30%;
+            }
+
+/* sezione 2 */
+.main_section_block--img {
+    width: 55%;
+}
+    .main_section_block--img > img {
+        max-width: 100%;
+    }
+
+.main_section_block--text {
+    width: 40%;
+    padding-top: 50px;
+}
+
+    .main_section_block--text > div {
+        margin-top: 40px;
+    }
+
+/* sezione 3 */
+.block_col--content{
+    margin-bottom: 50px;
+}
+.block_col--content img {
+    max-width: 100%;
+}
+
+.block_col--content h3 {
+    margin: 15px 0;
+}
+
+/* sezione 4 */
 .main_section--special {
     /* DEBUG */
     height: 1000px;
