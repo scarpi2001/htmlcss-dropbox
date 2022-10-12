@@ -75,6 +75,10 @@ body {
                         .azure {
                             background-color: rgb(0, 68, 255);
                         }
+
+                        .bianco {
+                            background-color: #fff;
+                        }
                         
                         .empty {
                             border: 1px solid black;
@@ -241,16 +245,17 @@ body {
     }
 
 /* sezione 3 */
-.block_col--content{
-    margin-bottom: 50px;
-}
-.block_col--content img {
-    max-width: 100%;
-}
+    .block_col--content{
+        margin-bottom: 60px;
+        
+        }
+        .block_col--content img {
+            max-width: 100%;
+        }
 
-.block_col--content h3 {
-    margin: 15px 0;
-}
+        .block_col--content h3 {
+            margin: 15px 0;
+        }
 
 /* sezione 4 */
 .main_section--special {
@@ -259,6 +264,97 @@ body {
     background-color: brown;
     border: 1px solid black;
 }
+    /* slideshow */
+    .slideshow {
+        display: flex;
+        height: 600px;
+    }
+
+        /* blocco centrale */
+        .slideshow_block.central {
+            display: block;
+            width: 40%;
+            padding: 25px;
+            background-color: rgb(236, 235, 235);
+            overflow-y: auto;
+        }
+
+            .slideshow_block.central p {
+                margin-bottom: 30px;
+            }
+        
+         /* blocco selezione slideshow */
+        .slideshow_block {
+            width: 30%;
+            display: flex;
+        }
+
+            .slideshow_block_col {
+                width: 50%;
+                height: 50%;
+            }
+
+                .col_element {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                }
+
+                    .col_element--img {
+                        max-width: 50%;
+                    }
+
+                        .invert {
+                            filter: invert(100%);
+                        }
+
+                    .lightgreen {
+                        background-color: lightgreen;
+                    }
+
+                    .lightblue {
+                        background-color: rgb(46, 172, 214) ;
+                    }
+
+                    .bordeaux {
+                        background-color: rgb(78, 5, 5);
+                    }
+                
+                    .red {
+                        background-color: red;
+                    }
+                    
+                    .ciano {
+                        background-color: lightblue;
+                    }
+                    
+                    .yellow {
+                        background-color: yellow;
+                    }
+
+                    .blu {
+                        background-color: rgb(14, 14, 194);
+                    }
+    
+    /* sottoblocco slideshow */
+    .slideshow_underblock{
+        height: 300px;
+    }
+
+    .slideshow_underblock_block {
+        width: 60%;
+        margin: 0 auto;
+    }                
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {
