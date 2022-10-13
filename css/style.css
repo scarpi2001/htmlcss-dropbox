@@ -53,13 +53,13 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    justify-content: space-around;
                     height: 100%;
                 }
 
                     .top li {
                         display: flex;
                         align-items: center;
+                        margin: 0 20px;
                         height: 100%;
                     }
 
@@ -273,13 +273,12 @@ body {
     /* slideshow */
     .slideshow {
         display: flex;
-        height: 600px;
+        height: calc(100vw / 3);
     }
 
         /* blocco centrale */
         .slideshow_block.central {
             display: block;
-            width: 40%;
             padding: 25px;
             background-color: rgb(236, 235, 235);
             overflow-y: auto;
@@ -291,7 +290,7 @@ body {
         
          /* blocco selezione slideshow */
         .slideshow_block {
-            width: 30%;
+            width: calc(100vw / 3);
             display: flex;
         }
 
@@ -304,7 +303,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 100%;
+                    height: calc(100vw / 6);
                 }
 
                     .col_element--img {
@@ -383,34 +382,41 @@ body {
             margin: 30px 0;
         }
 
-
-
-
-
-
-
 /* FOOTER */
 footer {
     display: flex;
     justify-content: center;
     background-color: black;
-    padding-top: 50px;
-    /* DEBUG */
-    height: 600px;
+    padding-top: 100px;
 }
 
     footer > div {
         display: flex;
         justify-content: space-between;
-        /* DEBUG */
-        background-color: grey;
-        border: 1px solid black;
-        width: 80%;
+        width: 70%;
     }
 
+        /* blocco footer */
         .footer_block {
             width: 18%;
-             /* DEBUG */
-            border: 1px solid black;
-        }            
+        }     
+
+            .footer_block h3 {
+                color: #fff;
+                margin-bottom: 25px;
+            }
         
+            .footer_block li {
+                margin-bottom: 10px;
+            }
+            
+            .divisore_footer {
+                width: 60%;
+                margin-top: 80px;
+                color: #fff;
+            }
+
+            .footer_block > div {
+                margin-top: 40px;
+                color: #fff;
+            }
